@@ -11,123 +11,176 @@
     <link href='http://fonts.googleapis.com/css?family=Brawler' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
     <style type="text/css">
-	  
-		html, body {
-		  height: 100%;
+
+                html, body {
+                  height: 100%;
+                }
+
+                /* Navigation bar */
+                .navbar {
+                        background-color: #419FC4;
+                        color: #fff;
+                }
+
+                .navbar-nav>li>a, .navbar-brand  {
+                        color: rgb(252, 252, 252);
+                        font-size: 20px;
+                }
+
+                .navbar-nav>.active>a {
+                        color:#333;
+                        background-color: #55B3D8;
+                }
+
+                .navbar-nav>.active>a:hover {
+                        color: #333;
+                        background-color: #55B3D8;
+                }
+
+                .navbar-brand:hover {
+                        color: #333;
+                }
+
+                .navbar-toggle {
+                        border: 1px solid #FFF;
+                }
+
+                .navbar-toggle .icon-bar {
+                        background-color: #fff;
+                }
+
+                .navbar-toggle:hover, .navbar-toggle:focus {
+                        background-color: #55B3D8;
+                }
+
+                /* Main body and headings */
+                body{
+                        font-family: 'Oxygen', sans-serif;
+						color: #6b717b;
+                }
+
+                .heading, .subheading {
+                        font-family: 'Oxygen', sans-serif;
+                        text-align: center;
+                }
+				
+				h1 {
+					font-weight: 700;
+				}
+
+                /* Wrapper for page content to push down footer */
+                #wrap {
+                  min-height: 100%;
+                  height: auto !important;
+                  height: 100%;
+                  /* Negative indent footer by its height */
+                  margin: 0 auto -60px;
+                  /* Pad bottom by footer height */
+                  padding: 0 0 60px;
+                }
+
+                /* Set the fixed height of the footer here */
+                #footer {
+                  height: 68px;
+                  background-color: #419FC4;
+                  text-align:center;
+                }
+
+                #wrap > .container {
+                  padding: 60px 15px 0;
+                }
+
+                .container .credit {
+                  margin: 20px 0;
+                }
+
+                /* Footer Navigation */
+                #footer, #footer p {
+                        color: #333;
+                        font-size: 13px;
+                }
+
+                #footer a {
+                        color: #fff;
+                }
+
+                #footer a:hover {
+                        color: #333;
+                }
+
+
+                .layer {
+                        background-color: rgb(248,248,250);
+                        padding: 50px 0;
+                        border-bottom: 1px solid rgb(171, 172, 173);
+                        border-top: 1px solid rgb(171, 172, 173);
+                }
+
+                p {
+                        font-size: 18px;
+                        line-height: 28px;
+                }
+
+                p.lead {
+                        padding-top: 1.5%;
+                        font-size: 24px;
+                        line-height: 30px;
+                }
+				
+		.progress-bar-info {
+			background-color: #419FC4;
 		}
-		
-		/* Navigation bar */
-		.navbar { 
-			background-color: #419FC4; 
-			color: #fff; 
+				
+		.current {
+			font-size:60px;
+			line-height: 60px;
+			color: #419FC4;
+			font-weight:700;
 		}
-		
-		.navbar-nav>li>a, .navbar-brand  { 
-			color: rgb(252, 252, 252); 
-			font-size: 20px; 
+				
+		.total {
+			font-size:20px;
+			line-height: 15px;
+			color: #6b717b
 		}
-		
-		.navbar-nav>.active>a { 
-			color:#333; 
-			background-color: #55B3D8; 
+				
+		.progress, .current, .total {
+			margin: 10px 20px;
 		}
-		
-		.navbar-nav>.active>a:hover { 
-			color: #333; 
-			background-color: #55B3D8; 
+				
+		.box {
+			background-color: rgb(252,252,252);
+			box-shadow: 2px 2px 1px rgb(171, 172, 173);
+			margin-top: 5px;
 		}
-		
-		.navbar-brand:hover { 
-			color: #333; 
-		}
-		
-		.navbar-toggle { 
-B
-			border: 1px solid #FFF; 
-		}
-		
-		.navbar-toggle .icon-bar { 
-			background-color: #fff; 
-		}
-		
-		.navbar-toggle:hover, .navbar-toggle:focus { 
-			background-color: #55B3D8; 
+				
+		.icon-3x {
+			color: #419FC4;
+			margin: 0 20px;
 		}
 
-		/* Main body and headings */
-		body{
-			font-family: 'Oxygen', sans-serif;
-		}
-		
-		.heading, .subheading {
-			font-family: 'Oxygen', sans-serif;
-			text-align: center;
-		}
-
-		/* Wrapper for page content to push down footer */
-		#wrap {
-		  min-height: 100%;
-		  height: auto !important;
-		  height: 100%;
-		  /* Negative indent footer by its height */
-		  margin: 0 auto -60px;
-		  /* Pad bottom by footer height */
-		  padding: 0 0 60px;
-		}
-
-		/* Set the fixed height of the footer here */
-		#footer {
-		  height: 68px;
-		  background-color: #419FC4;
-		  text-align:center;
-		}
-
-		#wrap > .container {
-		  padding: 60px 15px 0;
-		}
-		
-		.container .credit {
-		  margin: 20px 10px;
-		  float: left;
-		}
-		
-		.container .contact {
-		  margin: 20px 10px;
-		  float: right;
-		}
-
-		#footer, #footer p { 
-			color: #333; 
-			font-size: 15px; 
-		}
-		
-		#footer a { 
-			color: #fff; 
-		}
-		
-		#footer a:hover { 
-			color: #333; 
-		}
-		
-		.layer { 
-			background-color: rgb(248,248,250); 
-			padding: 50px 0;
+		.days {
+			margin-top: 20px;
 			border-bottom: 1px solid rgb(171, 172, 173);
-			border-top: 1px solid rgb(171, 172, 173);
+			padding-bottom: 10px;
 		}
-		
-		p {
-		        font-size: 18px;
-        		line-height: 28px;
+				
+		.num {
+			font-size:40px;
+			line-height: 45px;
+			font-weight:700;
+			color: #6b717b;
 		}
-		
-		p.lead {
-		        padding-top: 1.5%;
-		        font-size: 24px;
-		        line-height: 30px;
+				
+		.left {
+			font-size:20px;
+			line-height: 25px;
+			margin-left: 5px;
+			color: #6b717b;
 		}
-		.faq {
-		  font-size: 15px;
+				
+		.social {
+			padding: 20px;
 		}
     </style>
     <script type="text/javascript">
@@ -144,114 +197,140 @@ B
   </head>
 
   <body>
-	<div id="wrap">
-		
-		<!-- Fixed navbar -->
-		<div class="navbar navbar-fixed-top">
-		  <div class="container">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Bring-It-On!</a>
-			<div class="nav-collapse collapse">
-			  <ul class="nav navbar-nav pull-right">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#features">Features</a></li>
-				<li><a href="#faq">FAQ</a></li>
-			  </ul>
-			</div><!--/.nav-collapse -->
-		  </div>
-		</div>
-		<!-- End of navbar-->
-		
-		<div class="container">
-			<div class="row heading">
-				<div class="col-12 col-sm-12 col-lg-12">
-				  <h1>Bring-It-On!</h1>
-				</div>
-			</div> 
-			<div class="row subheading">
-				<div class="col-12 col-sm-12 col-lg-12">
-				  <p class="lead">The game has just begun...</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="layer">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-sm-12 col-lg-6">
-						<img class="img-thumbnail img-responsive"  alt="Mobile Game" src="http://imgur.com/sZdvbv5.jpg">
-					</div>
-					<div class="col-12 col-sm-12 col-lg-5">
-						<p>
-							Bring-It-On! is an application which allows you to play mini games with your friends. The present plan is to have this app to allow Android users to play with/against each other but there is a plan to make it a cross-platform app supporting iOS, BlackBerry and Windows Phone 8.
-						</p>
-						<p>
-							Bring-It-On! will use your data plan in the absence of a WiFi 
-							connection. 
-						</p>
-						<!-- AddThis Button BEGIN -->
-						<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-						  <a class="addthis_button_preferred_1"></a>
-						  <a class="addthis_button_preferred_2"></a>
-						  <a class="addthis_button_compact"></a>
-						  <a class="addthis_counter addthis_bubble_style"></a>
-						</div>
-						<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-						<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201ecbe6b042b86"></script>
-						<!-- AddThis Button END -->
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="container">
-			<div class="row faq">
-			  <div class="col-12 col-sm-12 col-lg-12">
-				<h3>FAQ</h3>
-				<div class="accordion" id="accordion2">
-				  <div class="accordion-group">
-					<div class="accordion-heading">
-					  <a class="accordion-toggle" data-toggle="collapse"
-						 data-parent="#accordion2" href="#collapseOne">
-						What does FAQ stand for?
-					  </a>
-					</div>
-					<div id="collapseOne" class="accordion-body collapse">
-					  <div class="accordion-inner">
-						Frequently Asked Question.
-					  </div>
-					</div>
-				  </div>
-				  <div class="accordion-group">
-					<div class="accordion-heading">
-					  <a class="accordion-toggle" data-toggle="collapse"
-						 data-parent="#accordion2" href="#collapseTwo">
-						What's a Frequently Asked Question?
-					  </a>
-					</div>
-					<div id="collapseTwo" class="accordion-body collapse">
-					  <div class="accordion-inner">
-						A question which is commonly asked by users.
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		</div>
-	</div>
+        <div id="wrap">
 
-	<!-- Sticky Footer -->
+                <!-- Fixed navbar -->
+                <div class="navbar navbar-fixed-top">
+                  <div class="container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Bring-It-On!</a>
+                        <div class="nav-collapse collapse">
+                          <ul class="nav navbar-nav pull-right">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                          </ul>
+                        </div><!--/.nav-collapse -->
+                  </div>
+                </div>
+                <!-- End of navbar-->
+
+                <div class="container">
+                        <div class="row heading">
+                                <div class="col-12 col-sm-12 col-lg-12">
+                                  <h1>Bring-It-On!</h1>
+                                </div>
+                        </div>
+                        <div class="row subheading">
+                                <div class="col-12 col-sm-12 col-lg-12">
+                                  <p class="lead">The game has just begun...</p>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="layer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-lg-6">
+								<img class="img-thumbnail img-responsive"  alt="Video" src="http://placehold.it/480x300">
+							</div>
+							<div class="box col-12 col-sm-12 col-lg-5">
+								<div class="row">
+									<p class="current">20</p>
+								</div>
+								<div class="row">
+									<div class="progress">
+										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<p class="total">Backers of 500 Goal</p>
+								</div>
+								<div class="days row">
+									<i class="icon-time icon-3x"></i>
+									<span class="num">25</span><span class="left">days left</span>
+								</div>
+								<div class="social row">
+									<!-- AddThis Button BEGIN -->
+									<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+									  <a class="addthis_button_preferred_1"></a>
+									  <a class="addthis_button_preferred_2"></a>
+									  <a class="addthis_button_compact"></a>
+									  <a class="addthis_counter addthis_bubble_style"></a>
+									</div>
+									<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+									<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201ecbe6b042b86"></script>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+				
+				<div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-lg-6">
+                            <img class="img-thumbnail img-responsive"  alt="Mobile Game" src="http://imgur.com/sZdvbv5.jpg">
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-5">
+                            <p>
+                                Bring-It-On! is an application which allows you to play mini games with your friends. The present plan is to have this app to allow Android users to play with/against each other but there is a plan to make it a cross-platform app supporting iOS, BlackBerry and Windows Phone 8.
+                            </p>
+                            <p>
+                                Bring-It-On! will use your data plan in the absence of a WiFi connection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                        <div class="row faq">
+                          <div class="col-12 col-sm-12 col-lg-12">
+                                <h3>FAQ</h3>
+                                <div class="accordion" id="accordion2">
+                                  <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse"
+                                                 data-parent="#accordion2" href="#collapseOne">
+                                                What does FAQ stand for?
+                                          </a>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                                Frequently Asked Question.
+                                          </div>
+                                        </div>
+                                  </div>
+                                  <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse"
+                                                 data-parent="#accordion2" href="#collapseTwo">
+                                                What's a Frequently Asked Question?
+                                          </a>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                                A question which is commonly asked by users.
+                                          </div>
+                                        </div>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                </div>
+        </div>
+
+        <!-- Sticky Footer -->
     <div id="footer">
         <div class="container">
-		<p class="credit">This work is licensed under the 
-		<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a></p>
-		<p class="contact"><a href="mailto:sahilrohri@gmail.com">Contact Us</a></p>
+                <p class="credit">This work is licensed under the
+                <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a></p>
         </div>
     </div>
     <script>
@@ -266,5 +345,4 @@ B
     </script>
   </body>
 </html>
-
 
