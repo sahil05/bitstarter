@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+CTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Bring-It-On!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,337 +12,417 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
     <style type="text/css">
 
-                html, body {
-                  height: 100%;
-                }
+        html, body {
+            height: 100%;
+        }
 
-                /* Navigation bar */
-                .navbar {
-                        background-color: #419FC4;
-                        color: #fff;
-                }
+            /* Navigation bar */
+        .navbar {
+            background-color: #419FC4;
+            color: #fff;
+        }
 
-                .navbar-nav>li>a, .navbar-brand  {
-                        color: rgb(252, 252, 252);
-                        font-size: 20px;
-                }
+        .navbar-nav>li>a, .navbar-brand {
+            color: rgb(252, 252, 252);
+            font-size: 20px;
+        }
 
-                .navbar-nav>.active>a {
-                        color:#333;
-                        background-color: #55B3D8;
-                }
+        .navbar-nav>.active>a {
+            color: #333;
+            background-color: #55B3D8;
+        }
 
-                .navbar-nav>.active>a:hover {
-                        color: #333;
-                        background-color: #55B3D8;
-                }
+        .navbar-nav>.active>a:hover {
+            color: #333;
+            background-color: #55B3D8;
+        }
 
-                .navbar-brand:hover {
-                        color: #333;
-                }
+        .navbar-brand:hover {
+            color: #333;
+        }
 
-                .navbar-toggle {
-                        border: 1px solid #FFF;
-                }
+        .navbar-toggle {
+            border: 1px solid #FFF;
+        }
 
-                .navbar-toggle .icon-bar {
-                        background-color: #fff;
-                }
+        .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
 
-                .navbar-toggle:hover, .navbar-toggle:focus {
-                        background-color: #55B3D8;
-                }
+        .navbar-toggle:hover, .navbar-toggle:focus {
+            background-color: #55B3D8;
+        }
 
-                /* Main body and headings */
-                body{
-                        font-family: 'Oxygen', sans-serif;
-						color: #6b717b;
-                }
+            /* Main body and headings */
+        body {
+            font-family: 'Oxygen', sans-serif;
+            color: #6b717b;
+        }
 
-                .heading, .subheading {
-                        font-family: 'Oxygen', sans-serif;
-                        text-align: center;
-                }
-				
-				h1 {
-					font-weight: 700;
-				}
+        .heading, .subheading {
+            font-family: 'Oxygen', sans-serif;
+            text-align: center;
+        }
 
-                /* Wrapper for page content to push down footer */
-                #wrap {
-                  min-height: 100%;
-                  height: auto !important;
-                  height: 100%;
-                  /* Negative indent footer by its height */
-                  margin: 0 auto -60px;
-                  /* Pad bottom by footer height */
-                  padding: 0 0 60px;
-                }
+        h1 {
+            font-size: 48px;
+        }
 
-                /* Set the fixed height of the footer here */
-                #footer {
-                  height: 68px;
-                  background-color: #419FC4;
-                  text-align:center;
-                }
+        h3 {
+            font-size: 36px;
+        }
 
-                #wrap > .container {
-                  padding: 60px 15px 0;
-                }
+        /* Wrapper for page content to push down footer */
+        #wrap {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            /* Negative indent footer by its height */
+            margin: 0 auto -60px;
+            /* Pad bottom by footer height */
+            padding: 0 0 60px;
+        }
 
-                .container .credit {
-                  margin: 20px 0;
-                }
+            /* Set the fixed height of the footer here */
+        #footer {
+            height: 68px;
+            background-color: #419FC4;
+            text-align: center;
+        }
 
-                /* Footer Navigation */
-                #footer, #footer p {
-                        color: #333;
-                        font-size: 13px;
-                }
+        #wrap > .container {
+            padding: 60px 15px 0;
+        }
 
-                #footer a {
-                        color: #fff;
-                }
+        .container .credit {
+            margin: 20px 0;
+        }
 
-                #footer a:hover {
-                        color: #333;
-                }
+            /* Footer Navigation */
+        #footer, #footer p {
+            color: #333;
+            font-size: 13px;
+        }
 
+        #footer a {
+            color: #fff;
+        }
 
-                .layer {
-                        background-color: rgb(248,248,250);
-                        padding: 50px 0;
-                        border-bottom: 1px solid rgb(171, 172, 173);
-                        border-top: 1px solid rgb(171, 172, 173);
-                }
+        #footer a:hover {
+            color: #333;
+        }
 
-                p {
-                        font-size: 18px;
-                        line-height: 28px;
-                }
+        .layer {
+            background-color: rgb(248, 248, 250);
+            padding: 50px 0;
+            border-bottom: 1px solid rgb(171, 172, 173);
+            border-top: 1px solid rgb(171, 172, 173);
+        }
 
-                p.lead {
-                        padding-top: 1.5%;
-                        font-size: 24px;
-                        line-height: 30px;
-                }
-				
-		.progress-bar-info {
-			background-color: #419FC4;
-		}
-				
-		.current {
-			font-size:60px;
-			line-height: 60px;
-			color: #419FC4;
-			font-weight:700;
-		}
-				
-		.total {
-			font-size:20px;
-			line-height: 15px;
-			color: #6b717b
-		}
-				
-		.progress, .current, .total {
-			margin: 10px 20px;
-		}
-				
-		.box {
-			background-color: rgb(252,252,252);
-			box-shadow: 2px 2px 1px rgb(171, 172, 173);
-			margin-top: 5px;
-		}
-				
-		.icon-3x {
-			color: #419FC4;
-			margin: 0 20px;
-		}
+        p {
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 5px;
+        }
 
-		.days {
-			margin-top: 20px;
-			border-bottom: 1px solid rgb(171, 172, 173);
-			padding-bottom: 10px;
-		}
-				
-		.num {
-			font-size:40px;
-			line-height: 45px;
-			font-weight:700;
-			color: #6b717b;
-		}
-				
-		.left {
-			font-size:20px;
-			line-height: 25px;
-			margin-left: 5px;
-			color: #6b717b;
-		}
-				
-		.social {
-			padding: 20px;
-		}
+        p.lead {
+            padding-top: 1.5%;
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        .progress-bar-info {
+            background-color: #419FC4;
+        }
+
+        .current {
+            font-size: 60px;
+            line-height: 60px;
+            color: #419FC4;
+            font-weight: 700;
+        }
+
+        .total {
+            font-size: 20px;
+            line-height: 15px;
+            color: #6b717b
+        }
+
+        .progress, .current, .total {
+            margin: 10px 20px;
+        }
+
+        .box {
+            background-color: rgb(252, 252, 252);
+            box-shadow: 2px 2px 1px rgb(171, 172, 173);
+            margin-top: 5px;
+        }
+
+        .icon-3x {
+            color: #419FC4;
+            margin: 0 20px;
+        }
+
+        .days {
+            margin-top: 20px;
+            border-bottom: 1px solid rgb(171, 172, 173);
+            padding-bottom: 10px;
+        }
+
+        .num {
+            font-size: 40px;
+            line-height: 45px;
+            font-weight: 700;
+            color: #6b717b;
+        }
+
+        .left {
+            font-size: 20px;
+            line-height: 25px;
+            margin-left: 5px;
+            color: #6b717b;
+        }
+
+        .social {
+            padding: 20px;
+        }
+
+        .feat {
+            text-align: center;
+        }
+
+        .feat-icons {
+            height: 96px;
+            width: 96px;
+            margin-left: 17px;
+        }
+
+        .icon-4x {
+            color: #419FC4;
+        }
+
+        .compete {
+            margin-top: 40px;
+            padding-left: 50px;
+        }
     </style>
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-43026861-1']);
-      _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43026861-1']);
+        _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
     </script>
-  </head>
+</head>
 
-  <body>
-        <div id="wrap">
+<body>
+<div id="wrap">
 
-                <!-- Fixed navbar -->
-                <div class="navbar navbar-fixed-top">
-                  <div class="container">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Bring-It-On!</a>
-                        <div class="nav-collapse collapse">
-                          <ul class="nav navbar-nav pull-right">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#features">Features</a></li>
-                                <li><a href="#faq">FAQ</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                          </ul>
-                        </div><!--/.nav-collapse -->
-                  </div>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bring-It-On!</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="mailto:sahilrohri@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- End of navbar-->
+
+    <div class="container">
+        <div class="row heading">
+            <div class="col-12 col-sm-12 col-lg-12">
+                <h1>Bring-It-On!</h1>
+            </div>
+        </div>
+        <div class="row subheading">
+            <div class="col-12 col-sm-12 col-lg-12">
+                <p class="lead">The game has just begun...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="layer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <img class="img-thumbnail img-responsive" alt="Video" src="http://placehold.it/480x300">
                 </div>
-                <!-- End of navbar-->
-
-                <div class="container">
-                        <div class="row heading">
-                                <div class="col-12 col-sm-12 col-lg-12">
-                                  <h1>Bring-It-On!</h1>
-                                </div>
-                        </div>
-                        <div class="row subheading">
-                                <div class="col-12 col-sm-12 col-lg-12">
-                                  <p class="lead">The game has just begun...</p>
-                                </div>
-                        </div>
-                </div>
-
-                <div class="layer">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-sm-12 col-lg-6">
-								<img class="img-thumbnail img-responsive"  alt="Video" src="http://placehold.it/480x300">
-							</div>
-							<div class="box col-12 col-sm-12 col-lg-5">
-								<div class="row">
-									<p class="current">20</p>
-								</div>
-								<div class="row">
-									<div class="progress">
-										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<p class="total">Backers of 500 Goal</p>
-								</div>
-								<div class="days row">
-									<i class="icon-time icon-3x"></i>
-									<span class="num">25</span><span class="left">days left</span>
-								</div>
-								<div class="social row">
-									<!-- AddThis Button BEGIN -->
-									<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-									  <a class="addthis_button_preferred_1"></a>
-									  <a class="addthis_button_preferred_2"></a>
-									  <a class="addthis_button_compact"></a>
-									  <a class="addthis_counter addthis_bubble_style"></a>
-									</div>
-									<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-									<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201ecbe6b042b86"></script>
-								</div>
-							</div>
-						</div>
-					</div>
-                </div>
-				
-				<div class="container">
+                <div class="box col-12 col-sm-12 col-lg-5">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-lg-6">
-                            <img class="img-thumbnail img-responsive"  alt="Mobile Game" src="http://imgur.com/sZdvbv5.jpg">
+                        <p class="current">20</p>
+                    </div>
+                    <div class="row">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 4%">
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-lg-5">
-                            <p>
-                                Bring-It-On! is an application which allows you to play mini games with your friends. The present plan is to have this app to allow Android users to play with/against each other but there is a plan to make it a cross-platform app supporting iOS, BlackBerry and Windows Phone 8.
-                            </p>
-                            <p>
-                                Bring-It-On! will use your data plan in the absence of a WiFi connection.
-                            </p>
+                    </div>
+                    <div class="row">
+                        <p class="total">Backers of 500 Goal</p>
+                    </div>
+                    <div class="days row">
+                        <i class="icon-time icon-3x"></i>
+                        <span class="num">25</span><span class="left">days left</span>
+                    </div>
+                    <div class="social row">
+                        <!-- AddThis Button BEGIN -->
+                        <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                            <a class="addthis_button_preferred_1"></a>
+                            <a class="addthis_button_preferred_2"></a>
+                            <a class="addthis_button_compact"></a>
+                            <a class="addthis_counter addthis_bubble_style"></a>
+                        </div>
+                        <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+                        <script type="text/javascript"
+                                src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201ecbe6b042b86"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-6">
+                <img class="img-thumbnail img-responsive" alt="Mobile Game" src="http://imgur.com/sZdvbv5.jpg">
+            </div>
+            <div class="col-12 col-sm-12 col-lg-5">
+                <p>
+                    Bring-It-On! is an application which allows you to play mini games with your friends. The present
+                    plan is to have this app to allow Android users to play with/against each other but there is a plan
+                    to make it a cross-platform app supporting iOS, BlackBerry and Windows Phone 8.
+                </p>
+
+                <p>
+                    Bring-It-On! will use your data plan in the absence of a WiFi connection.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    </div>
+
+    <div class="layer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <h3 class="feat">Features</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-lg-4">
+                    <img class="feat-icons img-responsive" src="http://i.imgur.com/e0w8Z3s.png" />
+                    <h4 style="padding-left: 33px;">Android</h4>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4">
+                    <img class="feat-icons img-responsive" src="http://i.imgur.com/ciEYU1a.png" />
+                    <h4 style="padding-left: 23px;">Wi-Fi/Data</h4>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4">
+                    <img class="feat-icons img-responsive" src="http://i.imgur.com/iNqzn3c.png" />
+                    <h4 style="padding-left: 18px;">Mini games</h4>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4">
+                    <img class="feat-icons img-responsive" src="http://i.imgur.com/R5yPOqx.png" />
+                    <h4  style="padding-left: 25px;">Compete</h4>
+                </div>
+                <div class="compete col-6 col-sm-6 col-lg-4">
+                    <i class="icon-group icon-4x"></i>
+                    <h4  style="margin-left: -20px;">Invite Friends</h4>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4">
+                    <img class="feat-icons img-responsive" src="http://i.imgur.com/ixuEJYa.png" />
+                    <h4  style="padding-left: 18px;">Leaderboard</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row faq">
+            <div class="col-12 col-sm-12 col-lg-12">
+                <h3>FAQ</h3>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse"
+                               data-parent="#accordion2" href="#collapseOne">
+                                What does FAQ stand for?
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Frequently Asked Question.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse"
+                               data-parent="#accordion2" href="#collapseTwo">
+                                What's a Frequently Asked Question?
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                A question which is commonly asked by users.
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="container">
-                        <div class="row faq">
-                          <div class="col-12 col-sm-12 col-lg-12">
-                                <h3>FAQ</h3>
-                                <div class="accordion" id="accordion2">
-                                  <div class="accordion-group">
-                                        <div class="accordion-heading">
-                                          <a class="accordion-toggle" data-toggle="collapse"
-                                                 data-parent="#accordion2" href="#collapseOne">
-                                                What does FAQ stand for?
-                                          </a>
-                                        </div>
-                                        <div id="collapseOne" class="accordion-body collapse">
-                                          <div class="accordion-inner">
-                                                Frequently Asked Question.
-                                          </div>
-                                        </div>
-                                  </div>
-                                  <div class="accordion-group">
-                                        <div class="accordion-heading">
-                                          <a class="accordion-toggle" data-toggle="collapse"
-                                                 data-parent="#accordion2" href="#collapseTwo">
-                                                What's a Frequently Asked Question?
-                                          </a>
-                                        </div>
-                                        <div id="collapseTwo" class="accordion-body collapse">
-                                          <div class="accordion-inner">
-                                                A question which is commonly asked by users.
-                                          </div>
-                                        </div>
-                                  </div>
-                                </div>
-                          </div>
-                        </div>
-                </div>
-        </div>
-
-        <!-- Sticky Footer -->
-    <div id="footer">
-        <div class="container">
-                <p class="credit">This work is licensed under the
-                <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a></p>
+            </div>
         </div>
     </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-43026861-1', 'herokuapp.com');
-      ga('send', 'pageview');
+</div>
 
-    </script>
-  </body>
+<!-- Sticky Footer -->
+<div id="footer">
+    <div class="container">
+        <p class="credit">This work is licensed under the
+            <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a></p>
+    </div>
+</div>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-43026861-1', 'herokuapp.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
 </html>
 
