@@ -1,4 +1,4 @@
-CTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -16,11 +16,15 @@ CTYPE html>
             height: 100%;
         }
 
-            /* Navigation bar */
+        /* Navigation bar */
         .navbar {
             background-color: #419FC4;
             color: #fff;
         }
+
+	.navbar-nav {
+		margin-top: 15px;
+	}
 
         .navbar-nav>li>a, .navbar-brand {
             color: rgb(252, 252, 252);
@@ -43,6 +47,7 @@ CTYPE html>
 
         .navbar-toggle {
             border: 1px solid #FFF;
+            top: 26px;
         }
 
         .navbar-toggle .icon-bar {
@@ -53,7 +58,11 @@ CTYPE html>
             background-color: #55B3D8;
         }
 
-            /* Main body and headings */
+	.navbar-brand .img-responsive {
+	    max-width:120%;
+	}
+
+        /* Main body and headings */
         body {
             font-family: 'Oxygen', sans-serif;
             color: #6b717b;
@@ -83,7 +92,7 @@ CTYPE html>
             padding: 0 0 60px;
         }
 
-            /* Set the fixed height of the footer here */
+        /* Set the fixed height of the footer here */
         #footer {
             height: 68px;
             background-color: #419FC4;
@@ -98,7 +107,7 @@ CTYPE html>
             margin: 20px 0;
         }
 
-            /* Footer Navigation */
+        /* Footer Navigation */
         #footer, #footer p {
             color: #333;
             font-size: 13px;
@@ -118,6 +127,10 @@ CTYPE html>
             border-bottom: 1px solid rgb(171, 172, 173);
             border-top: 1px solid rgb(171, 172, 173);
         }
+
+        #first {
+		margin-top: 27px;
+	}
 
         p {
             font-size: 20px;
@@ -231,6 +244,14 @@ CTYPE html>
             s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <script type="text/javascript">
+        $(function () {
+			$('body').scrollspy({ target: '.navbar' });
+			$('[data-spy="scroll"]').each(function () {
+				var $spy = $(this).scrollspy('refresh')
+			});
+		});
+    </script>
 </head>
 
 <body>
@@ -244,11 +265,10 @@ CTYPE html>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Bring-It-On!</a>
-
+            <a class="navbar-brand" href="http://bring-it-on.herokuapp.com"><img class="img-responsive" src="http://i.imgur.com/DJP2j78.png"></a>
             <div class="nav-collapse collapse">
                 <ul class="nav navbar-nav pull-right">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#faq">FAQ</a></li>
@@ -261,19 +281,9 @@ CTYPE html>
     <!-- End of navbar-->
 
     <div class="container">
-        <div class="row heading">
-            <div class="col-12 col-sm-12 col-lg-12">
-                <h1>Bring-It-On!</h1>
-            </div>
-        </div>
-        <div class="row subheading">
-            <div class="col-12 col-sm-12 col-lg-12">
-                <p class="lead">The game has just begun...</p>
-            </div>
-        </div>
     </div>
 
-    <div class="layer">
+    <div class="layer" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-6">
@@ -314,7 +324,7 @@ CTYPE html>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="about">
         <div class="row">
             <div class="col-12 col-sm-12 col-lg-6">
                 <img class="img-thumbnail img-responsive" alt="Mobile Game" src="http://imgur.com/sZdvbv5.jpg">
@@ -337,7 +347,7 @@ CTYPE html>
     </div>
 
     <div class="layer">
-        <div class="container">
+        <div class="container" id="features">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12">
                     <h3 class="feat">Features</h3>
@@ -362,7 +372,7 @@ CTYPE html>
                 </div>
                 <div class="compete col-6 col-sm-6 col-lg-4">
                     <i class="icon-group icon-4x"></i>
-                    <h4  style="margin-left: -12px;">Multiplayer</h4>
+                    <h4  style="margin-left: -20px;">Multiplayer</h4>
                 </div>
                 <div class="col-6 col-sm-6 col-lg-4">
                     <img class="feat-icons img-responsive" src="http://i.imgur.com/ixuEJYa.png" />
@@ -372,7 +382,7 @@ CTYPE html>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="faq">
         <div class="row faq">
             <div class="col-12 col-sm-12 col-lg-12">
                 <h3>FAQ</h3>
