@@ -64,7 +64,6 @@
 
         /* Main body and headings */
         body {
-            font-family: 'Oxygen', sans-serif;
             color: #6b717b;
         }
 
@@ -174,7 +173,7 @@
 
         .box {
             background-color: rgb(252, 252, 252);
-            box-shadow: 2px 2px 1px rgb(171, 172, 173);
+            box-shadow: 5px 5px 5px rgb(171, 172, 173);
             margin-top: 5px;
         }
 
@@ -244,6 +243,13 @@
 	.tag {
 	    font-style:italic;
 	    color: rgb(82, 82, 82);
+	}
+	.accordion-heading .accordion-toggle {
+	    background-color: #419FC4;
+	    color:#fff;
+	}
+	.accordion {
+	    box-shadow: 5px 5px 5px rgb(171, 172, 173);
 	}
 
     </style>
@@ -422,32 +428,71 @@
             <div class="col-12 col-sm-12 col-lg-12">
                 <h3>FAQ</h3>
                 <div class="accordion" id="accordion2">
-                    <div class="accordion-group">
+		    <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse"
                                data-parent="#accordion2" href="#collapseOne">
-                                What does FAQ stand for?
+                                When will it be ready?
                             </a>
                         </div>
                         <div id="collapseOne" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Frequently Asked Question.
+                                The initial prototype will be ready by the end of 2013.
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-group">
+		    </div>
+		    <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse"
                                data-parent="#accordion2" href="#collapseTwo">
-                                What's a Frequently Asked Question?
+                                Which games will be available?
                             </a>
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                A question which is commonly asked by users.
+                                Bring-It-On! will offer a varied range of entertaining games that you can pick and choose from. More specific details about the games will be posted soon.
                             </div>
                         </div>
-                    </div>
+		    </div>                    
+		    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse"
+                               data-parent="#accordion2" href="#collapseThree">
+                                What about iOS and Windows Phone 8?
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                At the moment Bring-It-On! will only be available for Android devices.
+                            </div>
+                        </div>
+		    </div>
+		    <div class="accordion-group">
+			<div class="accordion-heading">
+			    <a class="accordion-toggle" data-toggle="collapse"
+				data-parent="#accordion2" href="#collapseFour">
+				  How much do I have to pay for Bring-It-On!?
+			    </a>
+			</div>
+			<div id="collapseFour" class="accordion-body collapse">
+			    <div class="accordion-inner">
+				Zer0! It will be free!
+			    </div>
+			</div>
+		    </div>
+		    <div class="accordion-group">
+			<div class="accordion-heading">
+			    <a class="accordion-toggle" data-toggle="collapse"
+				data-parent="#accordion2" href="#collapseFive">
+				  How many people can play a game?
+			    </a>
+			</div>
+			<div id="collapseFive" class="accordion-body collapse">
+			    <div class="accordion-inner">
+				Depending on the game, 2-4 players can play.
+			    </div>
+			</div>
+		    </div>
                 </div>
             </div>
         </div>
